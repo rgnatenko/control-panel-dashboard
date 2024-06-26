@@ -1,3 +1,5 @@
+'use client';
+
 import { FormControl, FormField, FormItem, FormLabel } from '../../ui/form';
 import { Calendar } from '../../ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '../../ui/popover';
@@ -48,7 +50,6 @@ export default function DatePicker({ form, name, label }: DatePickerProps) {
                             disabled={(date) =>
                                 date > new Date() || date < new Date("1900-01-01")
                             }
-                            initialFocus
                         />
                     </PopoverContent>
                 </Popover>
